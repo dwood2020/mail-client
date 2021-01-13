@@ -8,7 +8,7 @@ void TestSend(email::Client* client) {
 	using namespace email;
 
 	Address from("mr-test-max@web.de", "Judas Made");
-	Address empfaenger1("d.woodward@gmx.de");
+	Address empfaenger1("my-test-friend@gmx.de");
 	Address self("mr-test-max@web.de", "Madenjudas");
 
 	std::vector<Address> to;
@@ -69,7 +69,7 @@ void TestReceive(email::Client* client) {
 
 int main(void) {	
 
-	email::Client client("mr-test-max@web.de", "fantamade123", "smtp://smtp.web.de:587", "imap://imap.web.de", 10U);
+	email::Client client("mr-test-max@web.de", "testpassword123", "smtp://smtp.web.de:587", "imap://imap.web.de", 10U);
 	client.SetCurlDebugOutput(false);
 	
 	//TestSend(&client);
