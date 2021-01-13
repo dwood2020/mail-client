@@ -15,8 +15,37 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="maintest.cpp">
+    <ClCompile Include="email\Address.cpp">
       <Filter>Quelldateien</Filter>
     </ClCompile>
+    <ClCompile Include="email\Client.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="email\DateTime.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="email\Message.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="test\test1.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="email\Address.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="email\Client.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="email\DateTime.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="email\email.hpp">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="email\Message.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

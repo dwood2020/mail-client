@@ -161,7 +161,18 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="maintest.cpp" />
+    <ClCompile Include="email\Address.cpp" />
+    <ClCompile Include="email\Client.cpp" />
+    <ClCompile Include="email\DateTime.cpp" />
+    <ClCompile Include="email\Message.cpp" />
+    <ClCompile Include="test\test1.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="email\Address.h" />
+    <ClInclude Include="email\Client.h" />
+    <ClInclude Include="email\DateTime.h" />
+    <ClInclude Include="email\email.hpp" />
+    <ClInclude Include="email\Message.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
