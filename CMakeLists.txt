@@ -11,9 +11,9 @@ include_directories(${PROJECT_SOURCE_DIR}/lib/include)
 link_directories(${PROJECT_SOURCE_DIR}/lib)
 
 # add email namespace source files
-#file(GLOB email_namespace_SRC CONFIGURE_DEPENDS "${PROJECT_SOURCE_DIR}/email/*.h"
-#												"${PROJECT_SOURCE_DIR}/email/*.hpp"
-#												"${PROJECT_SOURCE_DIR}/email/*.cpp" )
+file(GLOB EMAIL_NAMESPACE_SRC CONFIGURE_DEPENDS "${PROJECT_SOURCE_DIR}/email/*.h"
+												"${PROJECT_SOURCE_DIR}/email/*.hpp"
+												"${PROJECT_SOURCE_DIR}/email/*.cpp" )
 
 set(EMAIL_SOURCES
 	Address.cpp
@@ -28,7 +28,8 @@ set(EMAIL_SOURCES
 
 # add_library(email-module, ${EMAIL_SOURCES})
 
-add_executable(mail-client ${EMAIL_SOURCES})
+#add_executable(mail-client ${EMAIL_SOURCES})
+add_executable(mail-client ${EMAIL_NAMESPACE_SRC})
 
 # link library
 if (WIN32)
