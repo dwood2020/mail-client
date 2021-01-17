@@ -5,7 +5,7 @@ set(CMAKE_CXX_STANDARD 14)
 set(CMAKE_CXX_STANDARD_REQUIRED True)
 
 
-project(mail-client LANGUAGE C;CXX)
+project(mail-client LANGUAGE CXX)
 
 include_directories(${PROJECT_SOURCE_DIR}/lib/include)
 link_directories(${PROJECT_SOURCE_DIR}/lib)
